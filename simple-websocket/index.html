@@ -1,0 +1,18 @@
+<html>
+    <head>
+    <script>
+        var ws = new WebSocket("ws://localhost:9001");
+        ws.onopen = function(event){
+            console.log("open successfull");
+        }
+
+        ws.onmessage = function(event){
+            message = event.data;
+            console.log(message);
+        }        
+    </script>
+    </head>
+
+    <body>
+    </body>
+</html>
